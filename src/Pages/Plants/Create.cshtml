@@ -1,0 +1,94 @@
+﻿@page "{id}"
+@using ContosoCrafts.WebSite.Services
+@using ContosoCrafts.WebSite.Models.ENUM;
+@inject JsonFilePlantService ProductService
+@model ContosoCrafts.WebSite.Pages.Plants.CreateModel
+
+@{
+    ViewData["Title"] = "Create page";
+}
+<!--Displaying the title of this page -->
+<h1>Create</h1>
+
+
+<!--Displays fields in this container class for a user to update plant information.-->
+<div class="container">
+    <form method="post">
+
+
+        <!--Display areas for user to input Title-->
+        <div class="form-group">
+            <label asp-for="Product.Title" class="control-label"></label>
+            <input asp-for="Product.Title" class="form-control" maxlength="64" required />
+            <span asp-validation-for="Product.Title" class="text-danger"></span>
+        </div>
+
+        <!--Display areas for user to input Description-->
+        <div class="form-group">
+            <label asp-for="Product.Description" class="control-label"></label>
+            <input asp-for="Product.Description" class="form-control" maxlength="248" required />
+            <span asp-validation-for="Product.Description" class="text-danger"></span>
+        </div>
+
+        <!--Display areas for user to input Image-->
+        <div class="form-group">
+            <label asp-for="Product.Image" class="control-label"></label>
+            <input asp-for="Product.Image" class="form-control" maxlength="128" />
+            <span asp-validation-for="Product.Image" class="text-danger"></span>
+        </div>
+
+         <!--Display plant category enums to select-->
+            <div class="form-group">
+                <label for="plant type">Plant Categories:</label>
+                <!--<label asp-for="Product.UserType" class="control-label"></label>-->
+                <select asp-for="Product.PlantCategory" class="drop-down-menu-color" required>
+                    <option value="">Select an option</option>
+                    @foreach (PlantCategory x in Enum.GetValues(typeof(PlantCategory)))
+                    {
+                        if (x != PlantCategory.Undefined)
+                        {
+                            <option value="@((Int16)x)"> @x </option>
+                        }
+                    }
+                </select>
+                <span asp-validation-for="Product.PlantCategory" class="text-danger"></span>
+            </div>
+
+        @if (!Model.CreateCode.Equals(UserType.USER.ToString()))
+        {
+            <!--Display areas for user to input which gallery they would like to post the plant in-->
+            <div class="form-group">
+                <label for="plant type">Choose which gallery to post in:</label>
+                <!--<label asp-for="Product.UserType" class="control-label"></label>-->
+                <select asp-for="Product.UserType" class="drop-down-menu-color" required>
+                    <option value="">Select an option</option>
+                    @foreach (UserType x in Enum.GetValues(typeof(UserType)))
+                    {
+                        if (x != UserType.Undefined)
+                        {
+                            <option value="@((Int16)x)"> @x </option>
+                        }
+                    }
+                </select>
+                <span asp-validation-for="Product.UserType" class="text-danger"></span>
+            </div>
+        }
+
+
+        @* <label for="plant type">Choose which gallery to post in:</label>
+        <select name="gallery type" id="gallery type">
+            <option value="2">Community Gallery</option>
+            <option value="1" selected>Gallery</option>
+        </select>*@
+
+        <!--Button to save the updated info OnPost()-->
+        <div class="form-group">
+            <input type="submit" value="Save" class="btn btn-primary btn-rounded" />
+        </div>
+    </form>
+
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

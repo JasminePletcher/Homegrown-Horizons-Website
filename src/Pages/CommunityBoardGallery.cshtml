@@ -1,0 +1,25 @@
+﻿@page
+@using ContosoCrafts.WebSite.Components
+@using Microsoft.AspNetCore.Components.Web
+@using ContosoCrafts.WebSite.Models.ENUM;
+
+
+@model ContosoCrafts.WebSite.Pages.CommunityBoardGalleryModel
+@{
+    ViewData["Title"] = "Community Gallery";
+}
+<!--Displaying the title of the page-->
+<h1>@ViewData["Title"]</h1>
+
+<!-- Button to open create -->
+<button type="button" class="btn btn-primary btn-rounded" class ="margin-bottom">
+    <a  class="text-light" asp-area="" asp-page="/Plants/Create" asp-route-id=@UserType.USER>Create</a>
+</button>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+<!--Renders the component-->
+@(await Html.RenderComponentAsync<CommunityGalleryList>(RenderMode.ServerPrerendered))
+<script src="_framework/blazor.server.js"></script>

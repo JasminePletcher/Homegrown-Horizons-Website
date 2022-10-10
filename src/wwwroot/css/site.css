@@ -1,0 +1,256 @@
+﻿.checked {
+  color: orange;
+}
+
+.fa-star {
+  cursor: pointer;
+}
+/*Fonts*/
+@font-face {
+    font-family: leaves;
+    src: url(leaves.ttf);
+}
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+.card-columns .card:hover .card-img {
+    opacity: 1;
+    -webkit-transform-style: preserve-3d;
+}
+
+.card-columns .card-body {
+    height: 100px;
+    font-family: 'Nunito', sans-serif;
+    background: #fbfafd;
+}
+
+.card-columns .card-img {
+  height: 330px;
+  vertical-align: bottom;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  opacity: .8;
+}
+
+.modal .card-img {
+  width: 500px;
+  vertical-align: bottom;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.card-columns .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(37,33,82,.12), 0 4px 8px rgba(37,33,82,.06);
+}
+.card-footer {
+    background: #fbfafd;
+}
+
+
+a.navbar-brand {
+    font-family: leaves;
+    /*white-space: normal;
+    font-size: xx-large;
+    text-align: center;
+    word-break: break-all;
+    color: #287128;
+        */
+}
+
+/* Provide sufficient contrast against white background */
+a {
+   color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #171e19;
+    border-color: #ded9d1;
+}
+    .btn-primary:hover {
+        color: #fff;
+        background-color: #287128;
+        border-color: #ded9d1;
+    }
+
+.btn-rounded {
+    border-radius: 25px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+
+/* HomePage Styles
+-------------------------------------------------- */
+
+.wrap-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.display-list-style {
+    list-style-type: none; /* Remove bullets */
+    height: 40vh;
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.cover-bottom-img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: contain;
+    vertical-align: bottom;
+}
+
+.header-center {
+    text-align: center;
+}
+
+.block-margin-left-right {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+p {
+    font-family: 'Nunito', sans-serif;
+}
+h1 {
+    font-family: 'Nunito', sans-serif;
+}
+ul {
+    font-family: 'Nunito', sans-serif;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+    font-family: 'Nunito', sans-serif;
+}
+/*Backgrounds*/
+.bg-navbar {
+    background: -webkit-linear-gradient(110deg, #a7c9c3 60%, #759688 60%);
+    background: -o-linear-gradient(110deg, #a7c9c3 60%, #759688 60%);
+    background: -moz-linear-gradient(110deg, #a7c9c3 60%, #759688 60%);
+    background: linear-gradient(110deg, #a7c9c3 60%, #759688 60%);
+}
+.bg-footer {
+    background: -webkit-linear-gradient(110deg, #759688 60%, #a7c9c3 60%);
+    background: -o-linear-gradient(110deg, #759688 60%, #a7c9c3 60%);
+    background: -moz-linear-gradient(110deg, #759688 60%, #a7c9c3 60%);
+    background: linear-gradient(110deg, #759688 60%, #a7c9c3 60%);
+}
+
+.rounded-circle {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+
+.vertical-circle {
+    border-radius: 100%;
+    width: 300px;
+    height: 400px;
+}
+
+.square {
+    width: 300px;
+    height: 200px;
+}
+
+.rectangle {
+    width: 250px;
+    height: 400px;
+}
+
+/* Community Board Gallery Model style page
+-------------------------------------------------- */
+
+.margin-bottom {
+    margin-bottom: 10px;
+}
+
+/* QnA style page
+-------------------------------------------------- */
+
+.inline-block-left {
+    float: left;
+    display: inline-block;
+    margin: 50px;
+}
+
+.image-left {
+    float: left;
+    width: 30%;
+}
+
+.text-right{
+    float: right;
+    width: 60%;
+}
+
+.block-text-right {
+    float: right;
+    display: block;
+}
+
+.font-style-italic {
+    font-style: italic;
+}
+
+/* drop down menu color 
+-------------------------------------------------- */
+.drop-down-menu-color {
+    background-color: #819876;
+    color: #fff;
+    border-color: #ded9d1;
+}
+

@@ -1,0 +1,29 @@
+﻿@page "{id}"
+@using ContosoCrafts.WebSite.Services
+@inject JsonFilePlantService PlantService
+@model ContosoCrafts.WebSite.Pages.Plants.ReadModel
+
+@{
+    ViewData["Title"] = "Read page";
+}
+
+<!--Displays the Read heading for the page-->
+<h1>@Model.Plant.Title</h1>
+
+<!--Displays fields in this container class for a user to read plant information.-->
+<div class="container">
+
+    <img class="card-img" src='@Model.Plant.Image' alt='Image for @Model.Plant.Title'>
+
+    <p class="card-text">@Model.Plant.Description</p>
+
+</div>
+
+<br />
+<br />
+
+<!--Displays buttons to link users to Update and Delete pages-->
+<div class="row">
+    <a asp-page="Update" asp-route-id="@Model.Plant.Id" class="btn btn-primary btn-rounded">Update</a> &nbsp; &nbsp;
+    <a asp-page="Delete" asp-route-id="@Model.Plant.Id" class="btn btn-danger btn-rounded">Delete</a>
+</div>

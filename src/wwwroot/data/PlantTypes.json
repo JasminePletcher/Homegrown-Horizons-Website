@@ -1,0 +1,38 @@
+[
+  {
+      "ID": 1,
+      "TabNum": 1,
+      "Type": "Succulent",
+      "Description": "Attn: Introducing a funky, easy to care for plant category! Succulents thrive in partial to full sunlight with minimal watering. They are very low maintenance and as long as you do not overwater them, they will be fine. Succulents are a great beginner plant!",
+      "Plant": "Aloe Vera ",
+      "Image": "https://images.unsplash.com/photo-1570295835271-04c05b4ed943?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "Source": ""
+  },
+  {
+    "ID": 2,
+    "TabNum": 2,
+    "Type": "Tropical",
+    "Description": "If you want to make your indoor space feel more like a tropical getaway, consider investing in a tropical plant. Tropical plants generally like full to partial sun and to be kept very moist. ",
+    "Plant": "Venus Fly Trap",
+    "Image": "https://user-images.githubusercontent.com/91618885/141656179-73361c00-8d98-497f-bae8-18192b40b018.jpg",
+    "Source": ""
+  },
+  {
+    "ID": 3,
+    "TabNum": 3,
+    "Type": "Air",
+    "Description": "Air plants are actually called Tillandsias, which happens to be part of the Bromeliaceae or Bromeliad species. They have also been labelled as Epiphytes, as they do not need to have soil to grow. The air plant is often found in the jungles, mountain tops, and deserts, of Central and South America, and Mexico and the the southern United States in North America. Air plants are a variety of Epiphytes, meaning they need no soil to develop. They actually do call for a platform to commence growing. These plants are not parasitic and use their host for a method of support. The plant receives its nutrition within the moisture and dirt fibers drifting in the air. The roots are mainly implemented as a means of attaching itself to the supporting subject.",
+    "Plant": "Bulbosa seedlings",
+    "Image": "https://cdn.shopify.com/s/files/1/0049/0822/files/Bulbosa_Seedling_on_a_branch_grande.jpg?v=1557240994",
+    "Source": "Source: https://www.airplantsupplyco.com/blogs/articles/6369828-what-are-air-plants"
+  },
+  {
+      "ID": 4,
+      "TabNum": 4,
+      "Type": "Edible",
+      "Description": "Did you know you can eat some indoor plants? Edible plants are a great addition to home because they look great and taste great! Most edible plants enjoy full sun, frequent watering so the soil is moist, and rich soil. ",
+      "Plant": "Basil",
+      "Image": "https://rurallivingtoday.com/wp-content/uploads/basil-1.jpeg",
+      "Source": ""
+  }
+]

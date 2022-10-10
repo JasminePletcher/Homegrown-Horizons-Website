@@ -1,0 +1,164 @@
+[
+  {
+    "UserType": 1,
+    "PlantCategory": "2",
+    "ID": "1",
+    "Title": "Fiddle Leaf Fig",
+    "Image": "https://user-images.githubusercontent.com/91618885/136464983-42ebcb84-bb6f-4041-9946-1d7b5cff7b95.jpg",
+    "Description": "Sunlight: Indirect bright light \nWater: When 50% of the soil is dry, then water until soil is moist",
+    "WikiLink": "https://en.wikipedia.org/wiki/Ficus_lyrata"
+  },
+  {
+    "UserType": 1,
+    "PlantCategory": "1",
+    "ID": "2",
+    "Title": "Jade Bonsai",
+    "Image": "https://user-images.githubusercontent.com/91618885/136465475-5a1d82bc-e372-4aef-9164-1b65b9d3c41b.jpg",
+    "Description": "Sunlight: Full sun\nWater: Let plant dry out between watering. Water until soil is moist",
+    "WikiLink": "https://en.wikipedia.org/wiki/Crassula_ovata"
+  },
+  {
+    "UserType": 1,
+    "PlantCategory": "4",
+    "ID": "3",
+    "Title": "Meyer Lemon",
+    "Image": "https://user-images.githubusercontent.com/91618885/136465777-b716c6d6-ab53-4a0b-bfe3-75f0073da6e7.JPG",
+    "Description": "Sunlight: Full sun\nWater: Keep soil moist at all times",
+    "WikiLink": "https://en.wikipedia.org/wiki/Meyer_lemon"
+  },
+  {
+    "UserType": 1,
+    "PlantCategory": "2",
+    "ID": "4",
+    "Title": "Monstera",
+    "Image": "https://user-images.githubusercontent.com/91618885/136465937-b8343e9e-41c8-4eea-9650-5fa4c0276bac.jpg",
+    "Description": "Sunlight: Medium/Bright indirect light\nWater: Let soil dry out between watering. Water until soil is moist",
+    "WikiLink": "Monstera - Wikipedia"
+  },
+  {
+    "UserType": 1,
+    "PlantCategory": "1",
+    "ID": "5",
+    "Title": "Aloe Vera",
+    "Image": "https://user-images.githubusercontent.com/91618885/136466210-9503eaf5-1dc4-4d5c-95f1-a542bc8e55d9.jpg",
+    "Description": "Sunlight: bright, indirect sunlight\nWater: Let soil dry out betwen watering",
+    "WikiLink": "https://en.wikipedia.org/wiki/Aloe_vera"
+  },
+  {
+    "UserType": 1,
+    "PlantCategory": "1",
+    "ID": "6",
+    "Title": "Christmas Cactus ",
+    "Image": "https://user-images.githubusercontent.com/52084675/136668351-55e8f8b1-5cb4-4b5c-b61a-06b983eea414.jpeg",
+    "Description": "Sunlight: bright, indirect sunlight\nWater: every 2-3 weeks, but only when the top 1/3 of the soil feels dry",
+    "WikiLink": "https://en.wikipedia.org/wiki/Schlumbergera"
+  },
+  {
+    "UserType": 1,
+    "PlantCategory": "3",
+    "ID": "7",
+    "Title": "Air Plant",
+    "Image": "https://user-images.githubusercontent.com/52084675/136668321-bc5734f6-767a-4353-9252-b1d09b49e272.jpeg",
+    "Description": "Sunlight: bright, indirect sunlight\nWater: once per week",
+    "WikiLink": "https://en.wikipedia.org/wiki/Tillandsia"
+  },
+  {
+    "UserType": 1,
+    "PlantCategory": "2",
+    "ID": "8",
+    "Title": "Snake Plant",
+    "Image": "https://user-images.githubusercontent.com/52084675/136668369-6d2a50f7-9f7f-4a7e-b046-b0ade48512a2.jpeg",
+    "Description": "Sunlight: light level, from low to high. Strong direct sunlight burns leaves\nWater: Let soil dry out between watering",
+    "WikiLink": "https://en.wikipedia.org/wiki/Dracaena_trifasciata"
+  },
+  {
+    "UserType": 1,
+    "PlantCategory": "2",
+    "ID": "9",
+    "Title": "Spider Plant",
+    "Image": "https://user-images.githubusercontent.com/52084675/136668409-78f3a2a9-60a5-4194-990a-978fd2501186.jpeg",
+    "Description": "Sunlight: Indirect bright light \nWater: Once per week, let soil dry out between watering",
+    "WikiLink": "https://en.wikipedia.org/wiki/Chlorophytum_comosum"
+  },
+  {
+    "UserType": 1,
+    "PlantCategory": "2",
+    "ID": "10",
+    "Title": "Peace Lily",
+    "Image": "https://user-images.githubusercontent.com/52084675/136668362-6bef8871-c1e5-402e-b126-337f50bedf38.jpeg",
+    "Description": "Sunlight: Indirect low to bright light \nWater: once the top half of the potting soil is dry",
+    "WikiLink": "https://en.wikipedia.org/wiki/Spathiphyllum"
+  },
+  {
+    "UserType": 1,
+    "PlantCategory": "1",
+    "ID": "11",
+    "Title": "African Milk Tree",
+    "Image": "https://www.homestratosphere.com/wp-content/uploads/2019/09/1.Euphorbia-trigona.-also-known-as-African-milk-tree-cathedral-cactus-sept25.jpg",
+    "Description": "Sunlight: Indirect sun to partial shade\nWater: once a week, let soil dry out",
+    "WikiLink": "https://en.wikipedia.org/wiki/Euphorbia_trigona"
+  },
+  {
+    "UserType": 1,
+    "PlantCategory": "1",
+    "ID": "12",
+    "Title": "Bunny Ear Cactus",
+    "Image": "https://www.gardeningknowhow.com/wp-content/uploads/2015/05/bunny-ears-cactus-400x470.jpg",
+    "Description": "Sunlight: Low humidity home and plenty of sunny exposure\nWater: once a week, let soil dry out",
+    "WikiLink": "https://en.wikipedia.org/wiki/Opuntia_microdasys"
+  },
+  {
+    "UserType": 1,
+    "PlantCategory": "1",
+    "ID": "13",
+    "Title": "Burro's Tail",
+    "Image": "https://www.homestratosphere.com/wp-content/uploads/2019/09/8.Burros-Tail-Sedum-morganianum-sept25.jpg",
+    "Description": "Sunlight: Lots of direct sunlight\nWater: lots of water",
+    "WikiLink": "https://en.wikipedia.org/wiki/Sedum_morganianum"
+  },
+  {
+    "UserType": 1,
+    "PlantCategory": "1",
+    "ID": "14",
+    "Title": "Hens-and-Chicks",
+    "Image": "https://s3.amazonaws.com/eit-planttoolbox-prod/media/images/Echeveria_elegansEr_aD9PU6OMYNd8.jpeg",
+    "Description": "Sunlight: Indirect sun to partial shade\nWater: once a week, let soil dry out",
+    "WikiLink": "https://en.wikipedia.org/wiki/Echeveria_elegans"
+  },
+  {
+    "UserType": 1,
+    "PlantCategory": "1",
+    "ID": "15",
+    "Title": "Panda Plant",
+    "Image": "https://www.homestratosphere.com/wp-content/uploads/2019/09/16.Panda-Plant-Kalanchoe-tomentosa-sept-25.jpg",
+    "Description": "Sunlight: bright sun light\nWater: Let soil dry out, then soak",
+    "WikiLink": "https://en.wikipedia.org/wiki/Kalanchoe_tomentosa"
+  },
+  {
+    "UserType": 2,
+    "PlantCategory": "2",
+    "ID": "16",
+    "Title": "Bird of Paradise",
+    "Image": "https://user-images.githubusercontent.com/91618885/137385220-ae18bf51-3b50-42da-8cf1-8e65d58e5c67.jpg",
+    "Description": "Give any room a hint of a tropical getaway with a bird of paradise plant! They are very easy to take care of. Just give it a sunny place by a window and water when the top of the soil feels dry. I got this plant 1 1/2 years ago and it has gotten 2 feet taller with not too much maintenance (though I do need to repot it!)",
+    "WikiLink": ""
+  },
+  {
+    "UserType": 2,
+    "PlantCategory": "2",
+    "ID": "17",
+    "Title": "Snake Plant",
+    "Image": "https://user-images.githubusercontent.com/91618885/137385361-f710f997-a791-406f-bc71-8c1cd58910c8.jpg",
+    "Description": "Snake plants (mother in law's tongue) are resilient and make a statement. In my experience, they can grow in any pretty much any level of light  and need to be watered about once a week. ",
+    "WikiLink": ""
+  },
+  {
+    "UserType": 2,
+    "PlantCategory": "2",
+    "ID": "18",
+    "Title": "Umbrella Plant",
+    "Image": "https://user-images.githubusercontent.com/91618885/137385484-dac35f6f-e26e-4a66-88aa-af0782ad73d7.jpg",
+    "Description": "This tropical plant has cute glossy leaves that droop like an umbrella. I instantly fell in love with the shape of this plant at the nursery. They need lots of indirect light and enjoy being misted with water. ",
+    "WikiLink": ""
+  }
+]

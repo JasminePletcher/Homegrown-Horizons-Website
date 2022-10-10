@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Homegrown Horizons</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <!--Displaying logo icon on the tab-->
+    <link rel="icon" type="image/png" href="/HomegrownHorizonIcon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-navbar border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">
+                    <!--Displaying the company name-->
+                    <img class="navbar-brand" asp-area="" asp-page="/Index" src="~/HomegrownHorizonName.png" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <!-- display Plant Type tab -->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/PlantType">Plant Types</a>
+                        </li>
+                        <!-- Display Gallery tab -->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Gallery">Gallery</a>
+                        </li>
+                        <!-- menu dropdown for Community pages -->
+                        <li class="dropdown nav-item">
+                            <a href="#" class="dropdown-toggle nav-link text-dark" data-toggle="dropdown" role="button" aria-expanded="false"> Communities <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a class="nav-link text-dark" asp-area="" asp-page="/QnA">Q & A</a></li>
+                                <li><a class="nav-link text-dark" asp-area="" asp-page="/CommunityBoardGallery"> Community Gallery </a></li>
+                            </ul>
+                        </li>
+                        <!-- display Plant Index tab -->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Plants/Index">Plant Index</a>
+                        </li>
+                        <!-- Display Team Info tab -->
+                        <li class="dropdown nav-item">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/TeamInfo">Team Info</a>
+                        </li>
+                        <!-- Display Privacy tab -->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-black-50 bg-footer">
+        <div class="container">
+            <!--displaying the footer with the company name-->
+            &copy; 2021 - Homegrown Horizon - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

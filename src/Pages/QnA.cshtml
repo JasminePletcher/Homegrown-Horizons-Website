@@ -1,0 +1,163 @@
+﻿@page
+@model ContosoCrafts.WebSite.Pages.QnAModel
+@using ContosoCrafts.WebSite.Models.ENUM;
+@{
+}
+
+<!--Nav Bar-->
+<nav>
+    <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+        <!--Tabs labeling-->
+        <a class="nav-item nav-link text-dark active" id="nav-PlantCare-tab" data-toggle="tab" href="#nav-PlantCare" role="tab" aria-controls="nav-PlantCare" aria-selected="true">General Plant Care</a>
+        <a class="nav-item nav-link text-dark" id="nav-leafcolorandshape-tab" data-toggle="tab" href="#nav-leafcolorandshape" role="tab" aria-controls="nav-leafcolorandshape" aria-selected="false">Leaf Color and Shape</a>
+        <a class="nav-item nav-link text-dark" id="nav-dead-tab" data-toggle="tab" href="#nav-dead" role="tab" aria-controls="nav-dead" aria-selected="false">Dead</a>
+        <a class="nav-item nav-link text-dark" id="nav-pets-tab" data-toggle="tab" href="#nav-pets" role="tab" aria-controls="nav-v" aria-selected="false">Pet Safe Plants</a>
+    </div>
+</nav>
+
+<!--General Plant Care Section-->
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-PlantCare" role="tabpanel" aria-labelledby="nav-PlantCare-tab">
+        <div>
+            <br />
+            <table class="table" cellspacing="0" cellpadding="0">
+                <tbody>
+                    <!--Displays a Question or Answer based on the item-->
+                    @foreach (var item in Model.QnAList)
+                    {
+                        if (TabNum.TAB1.Equals(item.TabNum))
+                        {
+                            <tr>
+                                <div class="inline-block-left">
+                                    <span class="image-left">
+                                        <img src="@item.Image"
+                                             class="rounded-circle img-fluid" />
+                                    </span>
+                                    <span class="text-right">
+                                        <h1> @item.Question</h1>
+                                        <br />
+                                        <p class="block-text-right">
+                                            @item.Answer
+                                        </p>
+                                        <p class="font-style-italic">@item.Source </p>
+                                    </span>
+                                </div>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <!--  PLant Leaf and Color Q & A section-->
+    <div class="tab-pane fade" id="nav-leafcolorandshape" role="tabpanel" aria-labelledby="nav-leaf color and shape-tab">
+        <div class="tab-pane fade show active" id="nav-PlantCare" role="tabpanel" aria-labelledby="nav-PlantCare-tab">
+            <div>
+                <br />
+                <table class="table" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <!--Displays a Question or Answer based on the item-->
+                        @foreach (var item in Model.QnAList)
+                        {
+                            if (TabNum.TAB2.Equals(item.TabNum))
+                            {
+                                <tr>
+                                    <div class="inline-block-left">
+                                        <span class="image-left">
+                                            <img src="@item.Image"
+                                                 class="rounded-circle img-fluid" />
+                                        </span>
+                                        <span class="text-right">
+                                            <h1> @item.Question</h1>
+                                            <br />
+                                            <p class="block-text-right">
+                                                @item.Answer
+                                            </p>
+                                            <p class="font-style-italic">@item.Source </p>
+                                        </span>
+                                    </div>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Dead Plants Section-->
+    <div class="tab-pane fade" id="nav-dead">
+        <div class="tab-pane fade show active" id="nav-dead" role="tabpanel" aria-labelledby="nav-dead-tab">
+            <div>
+                <br />
+                <table class="table" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <!--Displays a Question or Answer based on the item-->
+                        @foreach (var item in Model.QnAList)
+                        {
+                            if (TabNum.TAB3.Equals(item.TabNum))
+                            {
+                                <tr>
+                                    <div class="inline-block-left">
+                                        <span class="image-left">
+                                            <img src="@item.Image"
+                                                 class="rounded-circle img-fluid" />
+                                        </span>
+                                        <span class="text-right">
+                                            <h1> @item.Question</h1>
+                                            <br />
+                                            <p class="block-text-right">
+                                                @item.Answer
+                                            </p>
+                                            <p class="font-style-italic">@item.Source </p>
+                                        </span>
+                                    </div>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--Pet Safe Plants Section-->
+    <div class="tab-pane fade" id="nav-pets" role="tabpanel" aria-labelledby="nav-leaf color and shape-tab">
+        <div class="tab-pane fade show active" id="nav-pets" role="tabpanel" aria-labelledby="nav-pets-tab">
+            <div>
+                <br />
+                <table class="table" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <!--Displays a Question or Answer based on the item-->
+                        @foreach (var item in Model.QnAList)
+                        {
+                            if (TabNum.TAB4.Equals(item.TabNum))
+                            {
+                                <tr>
+                                    <div class="inline-block-left">
+                                        <span class="image-left">
+                                            <img src="@item.Image"
+                                                 class="rounded-circle img-fluid" />
+                                        </span>
+                                        <span class="text-right">
+                                            <h1> @item.Question</h1>
+                                            <br />
+                                            <p class="block-text-right">
+                                                @item.Answer
+                                            </p>
+                                            <p class="font-style-italic">@item.Source </p>
+                                        </span>
+                                    </div>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+﻿@page "{id}"
+@using ContosoCrafts.WebSite.Services
+@using ContosoCrafts.WebSite.Models.ENUM;
+@inject JsonFilePlantService ProductService
+@model ContosoCrafts.WebSite.Pages.Plants.UpdateModel
+
+@{
+    ViewData["Title"] = "Update page";
+}
+
+<!--Displaying the title of this page -->
+<h1>Update</h1>
+
+
+<!--Displays fields in this container class for a user to update plant information.-->
+<div class="container">
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        @Html.HiddenFor(x => x.Plant.Id)
+
+  
+
+        <!--Display areas for user to input Title-->
+        <div class="form-group">
+            <label asp-for="Plant.Title" class="control-label"></label>
+            <input asp-for="Plant.Title" class="form-control" maxlength="64" required/>
+            <span asp-validation-for="Plant.Title" class="text-danger"></span>
+        </div>
+
+        <!--Display areas for user to input Description-->
+        <div class="form-group">
+            <label asp-for="Plant.Description" class="control-label"></label>
+            <input asp-for="Plant.Description" class="form-control" maxlength="248" required/>
+            <span asp-validation-for="Plant.Description" class="text-danger"></span>
+        </div>
+
+        <!--Display areas for user to input Image-->
+        <div class="form-group">
+            <label asp-for="Plant.Image" class="control-label"></label>
+            <input asp-for="Plant.Image" class="form-control"  maxlength="128" />
+            <span asp-validation-for="Plant.Image" class="text-danger"></span>
+        </div>
+
+        <!--Display plant category enums to select-->
+            <div class="form-group">
+                <label for="plant type">Plant Categories:</label>
+                <!--<label asp-for="Product.UserType" class="control-label"></label>-->
+                <select asp-for="Plant.PlantCategory" class="drop-down-menu-color" required>
+                    @foreach (PlantCategory x in Enum.GetValues(typeof(PlantCategory)))
+                    {
+                        if (x == PlantCategory.Undefined)
+                        {
+                            <option value=""> @x </option>
+                        }
+                        if (x != PlantCategory.Undefined)
+                        {
+                            <option value="@((Int16)x)"> @x </option>
+                        }
+                    }
+                </select>
+                <span asp-validation-for="Plant.PlantCategory" class="text-danger"></span>
+            </div>
+
+        <!--Button to save the updated info OnPost()-->
+        <div class="form-group">
+            <input type="submit" value="Save" class="btn btn-primary btn-rounded" />
+        </div>
+    </form>
+
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

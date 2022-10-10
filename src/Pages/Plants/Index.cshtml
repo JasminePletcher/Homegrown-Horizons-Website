@@ -1,0 +1,47 @@
+﻿@page
+@using ContosoCrafts.WebSite.Models.ENUM;
+@model ContosoCrafts.WebSite.Pages.Plants.IndexModel
+@{
+    ViewData["Title"] = "Index page";
+}
+
+
+<!--Displays fields in this container class for a user to see a list of plant titles-->
+<div class="container">
+
+    <a asp-page="Create" asp-route-id=System.Guid.NewGuid().ToString() class="btn btn-primary btn-rounded">Create</a>
+    <!--<a asp-page="Create" class="btn btn-link">+ Create</a>-->
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Type</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--Displays the type of plant: either Gallery or Community Gallery-->
+            @foreach (var plant in Model.Plants)
+            {
+                <tr>
+                    <td>@plant.Title</td>
+                    <td>
+                        @{ if (@plant.UserType.Equals(UserType.ADMIN))
+                            {
+                                <p>Gallery</p>
+                            }
+                            if (@plant.UserType.Equals(UserType.USER))
+                            {
+                                <p>Community Gallery</p>
+                            }
+                        }
+                    </td>
+
+                    <!--Redirects users to the Read page if Read is clicked-->
+                    <td><a asp-page="Read" asp-route-id="@plant.Id"><button class="btn btn-primary btn-rounded">Read</button></a></td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>

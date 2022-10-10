@@ -1,0 +1,123 @@
+﻿@code
+{
+    /// <summary>
+    /// Purpose: This is the UI page set up for the Gallery page to display each cards of plant with its picture,
+    //  name of the plant, give the user an option to view more info about the plant care.
+    /// </summary>
+}
+@using ContosoCrafts.WebSite.Models.ENUM
+@using ContosoCrafts.WebSite.Models
+@using ContosoCrafts.WebSite.Services
+@using Microsoft.AspNetCore.Components.Web
+@inject JsonFilePlantService PlantService
+
+<!--Display dropdown for users to choose which category to view-->
+<div class="form-group">
+    <label for="plant type">Choose which category to view:</label>
+        <select type="text" @onchange="(e) => UpdateFilterText(e.Value.ToString())" id="category" class="drop-down-menu-color">
+            <option value="0">Choose an option</option>
+            <option value="1">Succulent</option>
+            <option value="2">Tropical</option>
+            <option value="3">Air</option>
+            <option value="4">Edible</option>
+        </select>
+</div>
+
+<!---Creating the card to display the plant image, button for the user to view more information, and name of plant-->
+<div class="card-columns">
+    @foreach (var plant in PlantService.GetAllData(userType))
+    {
+        @if (@plantCategory == @plant.PlantCategory || @plantCategory == "0")
+        {
+            <div class="card">
+                <!--Display thumbnail image-->
+                <div class="card-img" style="background-image: url('@plant.Image');">
+                </div>
+                <div class="card-body">
+                    <!--Display plant title-->
+                    <h5 class="card-title">@plant.Title</h5>
+                </div>
+                <div class="card-footer">
+                    <!--This is for the more info button-->
+                    <small class="text-muted">
+                        <button @onclick="(e => SelectPlant(plant.Title))"
+                                data-toggle="modal" data-target="#plantModal" id="MoreInfoButton_@plant.Id" class="btn btn-primary btn-rounded">
+                            More Info
+                        </button>
+
+                    </small>
+                </div>
+            </div>
+            }
+        }
+</div>
+
+<!---Display the plant image, name of plant, description of the plant retrieving this from the json file-->
+@if (selectedPlant != null)
+{
+    <div class="modal fade" id="plantModal" tabindex="-1" role="dialog" aria-labelledby="plantTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!---Getting the name of the plant-->
+                    <h5 class="modal-title" id="plantName">@selectedPlant.Title</h5>
+                    <!--Allow the user to exit out of the card when selecting the more info button-->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card">
+                        <!---Displaying the image of the plant on the card-->
+                        <div class="card-img" style="background-image: url('@selectedPlant.Image');">
+                        </div>
+                        <div class="card-body">
+                            <!---Inside the card contain the plant's description-->
+                            <p class="card-text">@selectedPlant.Description</p>
+                            <!--Wiki link for even more info-->
+                            <p class="card-text"> <a href="@selectedPlant.Wikilink">Link to Wikipedia</a> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+@code
+{
+    // Declaring the variables
+    PlantModel selectedPlant;
+    //ID of the plant
+    string selectedPlantId;
+    //Getting userType of plant to see which board it belongs
+    UserType userType = UserType.ADMIN;
+
+    /// <summary>
+    /// This is for selecting the correct plant in the json file
+    /// </summary>
+    /// <param name="nameId"></param>
+    public void SelectPlant(string nameId)
+    {
+        selectedPlantId = nameId;
+        // Select the plant from the gallery
+        selectedPlant = PlantService.GetAllData(userType).First(x => x.Title == nameId);
+
+    }
+
+    // Plant Category set default to 0
+    string plantCategory = "0";
+
+    /// <summary>
+    /// This is for updating the filter 
+    /// </summary>
+    /// <param name="nameId"></param>
+    void UpdateFilterText(string text)
+    {
+        plantCategory = text;
+
+        Console.WriteLine("plantCategory: " + plantCategory);
+    }
+}

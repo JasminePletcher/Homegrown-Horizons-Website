@@ -1,0 +1,78 @@
+﻿@page
+@model ContosoCrafts.WebSite.Pages.TeamInfoModel
+@{
+}
+
+
+<!--Nav bar for About Us tabs and Contact Us tabs -->
+<nav>
+    <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+        <ul class="nav-tabs nav">
+
+            <!-- navigation menu items -->
+            <li class="nav-item">
+                <a href="#aboutus" data-toggle="tab" class="active nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contactus" data-toggle="tab" class="nav-link">Contact Us</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<!--Content of tabs -->
+<div class="tab-content">
+    <!-- About Us tab contents -->
+    <div id="aboutus" class="tab-pane active container">
+        <!-- Header -->
+        <h1>The Team Behind Homegrown Horizons!</h1>
+        <!-- Description -->
+        <p>
+            Hello there! <br /> Welcome to our website. <br />
+            We are the creators of Homegrown Horizons and are so excited you are here. We each come from different plant parent backgrounds
+            and are excited to share our knowledge with you. We hope you find what you are looking for.
+        </p>
+
+        <div class="row">
+            <!-- Tran picture -->
+            <div class="column">
+                <h2>Tran</h2>
+                <img src="https://user-images.githubusercontent.com/91618885/140585802-60f247cf-7d9e-4464-9482-c816eecfad49.jpg"
+                     class="rectangle" />
+            </div>
+
+            <!-- Nick picture -->
+            <div class="column">
+                <h2>Nichlos</h2>
+                <img src="https://user-images.githubusercontent.com/91618885/140587674-5df72b1e-b1c7-4439-878a-5c7b88d524a4.jpg"
+                     class="square" />
+            </div>
+
+            <!-- Maason picture -->
+            <div class="column">
+                <h2>Maason</h2>
+                <img src="https://user-images.githubusercontent.com/91618885/140585659-e3a2c43b-abe4-476b-86a9-77beaa50dd6b.jpg"
+                     class="square" />
+            </div>
+
+            <!-- Jasmine picture -->
+            <div class="column">
+                <h2>Jasmine</h2>
+                <img src="https://user-images.githubusercontent.com/91618885/140585630-69eea4a6-59e6-46fd-805e-c6f0ea11d825.jpg"
+                     class="rectangle" />
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Contact Us tab contents -->
+    <div id="contactus" class="tab-pane container">
+
+        <h4>  <br />  <br /> If you have questions or feedback about the website contact the HH team: <br /> </h4>
+
+        <h4 class="font-italic">homegrownhorizons@gmail.com</h4>
+
+    </div>
+
+</div>

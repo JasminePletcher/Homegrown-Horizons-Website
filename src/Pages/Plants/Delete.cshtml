@@ -1,0 +1,55 @@
+﻿@page "{id}"
+@using ContosoCrafts.WebSite.Services
+@inject JsonFilePlantService PlantService
+@model ContosoCrafts.WebSite.Pages.Plants.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete page";
+}
+
+<h1>Delete</h1>
+
+<!--Displays fields in this container class for a user to delete plant information.-->
+<div class="container">
+    <form method="post">
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        @Html.HiddenFor(x => x.Plant.Id)
+
+        <!-- input field for plant title -->
+        <div class="form-group">
+            <label asp-for="Plant.Title" class="control-label"></label>
+            <input asp-for="Plant.Title" class="form-control" disabled />
+        </div>
+
+        <!-- input field for plant Description -->
+        <div class="form-group">
+            <label asp-for="Plant.Description" class="control-label"></label>
+            <input asp-for="Plant.Description" class="form-control" disabled />
+        </div>
+
+        <!-- input field for plant wikilink -->
+        <div class="form-group">
+            <label asp-for="Plant.Wikilink" class="control-label"></label>
+            <input asp-for="Plant.Wikilink" class="form-control" disabled />
+        </div>
+
+        <!-- input field for plant image -->
+        <div class="form-group">
+            <label asp-for="Plant.Image" class="control-label"></label>
+            <input asp-for="Plant.Image" class="form-control" disabled />
+        </div>
+
+        <h3>Confirm Delete of this item</h3>
+
+        <!-- button for Delete -->
+        <div class="form-group">
+            <input type="submit" value="Delete" class="btn btn-primary btn-rounded" />
+        </div>
+    </form>
+
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

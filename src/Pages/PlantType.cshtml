@@ -1,0 +1,163 @@
+﻿@page
+@using ContosoCrafts.WebSite.Models.ENUM;
+@model ContosoCrafts.WebSite.Pages.PlantTypeModel
+@{
+}
+
+<!--Nav Bar-->
+<nav>
+    <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+        <!--Tabs labeling-->
+        <a class="nav-item nav-link text-dark active" id="nav-Succulent-tab" data-toggle="tab" href="#nav-Succulent" role="tab" aria-controls="nav-Succulent" aria-selected="true">Succulent</a>
+        <a class="nav-item nav-link text-dark" id="nav-Tropical-tab" data-toggle="tab" href="#nav-Tropical" role="tab" aria-controls="nav-Tropical" aria-selected="false">Tropical</a>
+        <a class="nav-item nav-link text-dark" id="nav-Air-tab" data-toggle="tab" href="#nav-Air" role="tab" aria-controls="nav-Air" aria-selected="false">Air</a>
+        <a class="nav-item nav-link text-dark" id="nav-Edible-tab" data-toggle="tab" href="#nav-Edible" role="tab" aria-controls="nav-v" aria-selected="false">Edible</a>
+    </div>
+</nav>
+
+<!--Succulent Plant Section-->
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-Succulent" role="tabpanel" aria-labelledby="nav-Succulent-tab">
+        <div>
+            <br />
+            <table class="table" cellspacing="0" cellpadding="0">
+                <tbody>
+
+                    <!--Displays Succulent type information-->
+                    @foreach (var item in Model.PTList)
+                    {
+                        if (TabNum.TAB1.Equals(item.TabNum))
+                        {
+                            <tr>
+                                <div class="inline-block-left">
+                                    <span class="image-left">
+                                        <p class="font-style-italic">@item.Plant </p>
+                                        <img src="@item.Image"
+                                             class="rounded-circle img-fluid" />
+                                    </span>
+                                    <span class="text-right">
+                                        <p class="block-text-right">
+                                            @item.Description
+                                        </p>
+                                        <p class="font-style-italic">@item.Source </p>
+                                    </span>
+                                </div>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <!--  Tropical Plant Section-->
+    <div class="tab-pane fade" id="nav-Tropical" role="tabpanel" aria-labelledby="nav-leaf color and shape-tab">
+        <div class="tab-pane fade show active" id="nav-Tropical" role="tabpanel" aria-labelledby="nav-Tropical-tab">
+            <div>
+                <br />
+                <table class="table" cellspacing="0" cellpadding="0">
+                    <tbody>
+
+                        <!--Displays a Tropical type information-->
+                    @foreach (var item in Model.PTList)
+                    {
+                        if (TabNum.TAB2.Equals(item.TabNum))
+                        {
+                            <tr>
+                                <div class="inline-block-left">
+                                    <span class="image-left">
+                                        <p class="font-style-italic">@item.Plant </p>
+                                        <img src="@item.Image"
+                                             class="rounded-circle img-fluid" />
+                                    </span>
+                                    <span class="text-right">
+                                        <p class="block-text-right">
+                                            @item.Description
+                                        </p>
+                                        <p class="font-style-italic">@item.Source </p>
+                                    </span>
+                                </div>
+                            </tr>
+                        }
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Air Plant Section-->
+    <div class="tab-pane fade" id="nav-Air">
+        <div class="tab-pane fade show active" id="nav-Air" role="tabpanel" aria-labelledby="nav-Air-tab">
+            <div>
+                <br />
+                <table class="table" cellspacing="0" cellpadding="0">
+                    <tbody>
+
+                        <!--Displays Air type information-->
+                    @foreach (var item in Model.PTList)
+                    {
+                        if (TabNum.TAB3.Equals(item.TabNum))
+                        {
+                            <tr>
+                                <div class="inline-block-left">
+                                    <span class="image-left">
+                                        <p class="font-style-italic">@item.Plant </p>
+                                        <img src="@item.Image"
+                                             class="rounded-circle img-fluid" />
+                                    </span>
+                                    <span class="text-right">
+                                        <p class="block-text-right">
+                                            @item.Description
+                                        </p>
+                                        <p class="font-style-italic">@item.Source </p>
+                                    </span>
+                                </div>
+                            </tr>
+                        }
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--Edible Plant Section-->
+    <div class="tab-pane fade" id="nav-Edible" role="tabpanel" aria-labelledby="nav-leaf color and shape-tab">
+        <div class="tab-pane fade show active" id="nav-Edible" role="tabpanel" aria-labelledby="nav-Edible-tab">
+            <div>
+                <br />
+                <table class="table" cellspacing="0" cellpadding="0">
+                    <tbody>
+
+                        <!--Displays Edible type infomration-->
+                    @foreach (var item in Model.PTList)
+                    {
+                        if (TabNum.TAB4.Equals(item.TabNum))
+                        {
+                            <tr>
+                                <div class="inline-block-left">
+                                    <span class="image-left">
+                                        <p class="font-style-italic">@item.Plant </p>
+                                        <img src="@item.Image"
+                                             class="rounded-circle img-fluid" />
+                                    </span>
+                                    <span class="text-right">
+                                        <p class="block-text-right">
+                                            @item.Description
+                                        </p>
+                                        <p class="font-style-italic">@item.Source </p>
+                                    </span>
+                                </div>
+                            </tr>
+                        }
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

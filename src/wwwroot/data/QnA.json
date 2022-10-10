@@ -1,0 +1,98 @@
+[
+    {
+        "ID": 1,
+        "TabNum": 1,
+        "Question": "Watering",
+        "Answer": " Most plants indoors need watering ABOUT once a week. Every plant will differ, depending on a number of factors, such as the maturity of the plant's root system, what kind of pot holds the plant,\nwhere the plant is placed in relation to sunlight/heat/circulating air and exactly what kind of plant it is. Plants in windows will obviously dry out faster than those exposed to little direct sunlight. Check by looking to see if the soil looks dry; then put your finger into the soil about an inch (to the first joint) to see if it's moist. Plants should become slightly dry between waterings, but don't let them wilt: that's much too dry! To water correctly, pour enough water into the pot so that some comes out of the drainage hole. Discard the extra water. If the plant was very dry, water it again in about fifteen minutes. Don't let any plant stay constantly wet from standing water in the saucer. And keep in mind that more plants die indoors from too much watering than from too little.",
+        "Image": "https://images.unsplash.com/photo-1473081556163-2a17de81fc97?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80",
+        "Source": "Source: newgarden.com"
+    },
+    {
+        "ID": 2,
+        "TabNum": 1,
+        "Question": "Sunlight",
+        "Answer": " Plants, of course, need light. A plant that is not getting enough light will become yellowish and won't grow. No amount of fertilizer will change this. Try moving the plant gradually into a brighter area, or consider adding fluorescent or plant lighting. You have many options here \u00e2\u20ac\u201d\nfrom grow lights that are a self-contained lighting unit, to special bulbs that can be used in any fixture, to specially designed plant stands with fluorescent light fixtures built in.",
+        "Image": "https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80",
+        "Source": "Source: newgarden.com"
+    },
+    {
+        "ID": 3,
+        "TabNum": 1,
+        "Question": "Cleaning",
+        "Answer": "Taking off dead and dying leaves and cutting brown tips off of leaves will help you plant stay nice looking (and yes, it's perfectly normal for plants to occasionally lose a leaf). A vining plant such as ivy needs to be cut back for neatness. Be aggressive. The farther back you cut your plant, the fuller it will become. In fact, we've seen great results with over grown, scraggly, ugly plants that were cut back almost to the soil line: new growth is lush, shapely, healthy, and generally prettier.  Plants breathe through their leaves, so keep them dust-free. This means wiping the leaves off with a damp rag or setting the whole plant in the shower (which would take care of watering, tool). Just be careful that the shower spray doesn't dislodge and wash away the potting soil.\n                    ",
+        "Image": "https://images.unsplash.com/photo-1517191434949-5e90cd67d2b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+        "Source": "Source: newgarden.com"
+    },
+    {
+        "ID": 4,
+        "TabNum": 2,
+        "Question": "What do yellow leaves mean?",
+        "Answer": "Lots of yellow leaves most likely means your plant is being overwatered or underwatered. If the potting mix feels very dry then your plant probably needs more water, likewise, if the soil feels moist then your plant probably requires less water. Yellow leaves can also result from a plant being too hot or too cold. Try to keep your plant in a spot with mild temperature (70 degrees).",
+        "Image": "https://images.unsplash.com/photo-1531875985735-f135dac5f230?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80",
+        "Source": ""
+    },
+    {
+        "ID": 5,
+        "TabNum": 2,
+        "Question": "Why are my plant leaves so dusty?",
+        "Answer": " Plants clean the air and dust tends to cling on their leaves, especially when they are indoors and there are no weather events like rain to clean the leaves. To remove the dust from your plant leaves, take a dry paper towel/washcloth then wet paper towel/washcloth and gently wipe the leaves.",
+        "Image": "https://cdn.pixabay.com/photo/2017/09/18/15/08/flower-2761980_1280.jpg",
+        "Source": ""
+    },
+    {
+        "ID": 6,
+        "TabNum": 2,
+        "Question": "What is variegation?",
+        "Answer": "Variegation is when there are random blobs of non-green (usually lighter than the original color of your plant) color on your plant. It is a way for the leaves to cope with increased light. Variegation doesn't mean there is anything wrong with your plant's health.",
+        "Image": "https://cdn.pixabay.com/photo/2016/08/08/19/03/plantain-lily-1579042_1280.jpg",
+        "Source": ""
+    },
+    {
+        "ID": 7,
+        "TabNum": 3,
+        "Question": "What to do with damaged roots?",
+        "Answer": "Trim back the leaves to lessen the burden on supporting the foliage.",
+        "Image": "https://www.thespruce.com/thmb/JiePv9lxIjyXqWzoHNxdzd8s7wM=/1423x1067/smart/filters:no_upscale()/how-to-tell-if-your-plant-is-rootbound-847788-hero-ea3340c2f2a549d2aec38d676ebde563.jpg",
+        "Source": ""
+    },
+    {
+        "ID": 8,
+        "TabNum": 3,
+        "Question": "What to do with dry and brittle looking plants?",
+        "Answer": "Move your plants to a better light conditions.",
+        "Image": "https://images.unsplash.com/photo-1572978186313-011cc3c353fe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80",
+        "Source": ""
+    },
+    {
+        "ID": 9,
+        "TabNum": 3,
+        "Question": "What to do with drowning plants?",
+        "Answer": "Move the plants out of direct sunlight and let the soil dry out before watering again. In worst case, if the soil is too soggy you should consider to change the soil and the pot.",
+        "Image": "http://www.goodearthplants.com/wp-content/uploads/2018/03/water-1554360_1920-2.jpg",
+        "Source": ""
+    },
+    {
+        "ID": 10,
+        "TabNum": 4,
+        "Question": "What makes a plant dangerous to pets?",
+        "Answer": "Some plants are extremely dangerous to pets, while others will have minor negative effects. These can be broken down into four classes:\nExtremely toxic: Plants that are extremely toxic to plants can causes major illnesses or even death in some cases\nMajorly toxic: Other plants can cause vomiting, diarrhea, and other sicknesses if ingested. Minorly toxic: These plants will cause skin irritation and minor ailments. Somewhat toxic: Plants in this category can cause rashes, or make your pets avoid them in general. ",
+        "Image": "https://www.gardeningknowhow.com/wp-content/uploads/2015/10/alocasia-fertilizer-682x1024.jpg",
+        "Source": ""
+    },
+    {
+        "ID": 11,
+        "TabNum": 4,
+        "Question": "What are some plants to avoid?",
+        "Answer": "Avoid these plants if you want to keep your pet safe:\nTulip/Narcissus Bulbs: The bulbs of these plants are majorly toxic to pets. Pothos plants: If chewed or injested, these plants can cause irritation and swelling of the tongue and gums. Lilies: These plants are considered extremely toxic to cats; and can cause severe kidney damage. Autumn Crocus: Crocuses are extremely toxic to pets, can can cause multiple organ failure.",
+        "Image": "https://cdn.britannica.com/70/176570-050-4D6D0936/Pothos-houseplant.jpg",
+        "Source": ""
+    },
+    {
+        "ID": 12,
+        "TabNum": 4,
+        "Question": "What are some plants that are safe?",
+        "Answer": "Orchid are a flowering plant that are pet safe. Boston ferns are pet safe, and pets can enjoy playing with the dangling fronds Spider plants can endure some playful nibbling from pets and thrive. Chinese Mmoney plants will bring you and your pet good fortune.",
+        "Image": "https://www.gardeningknowhow.com/wp-content/uploads/2020/11/pot-of-hanging-boston-ferns-690x518.jpg",
+        "Source": ""
+    }
+]

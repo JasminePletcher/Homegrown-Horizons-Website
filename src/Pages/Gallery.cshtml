@@ -1,0 +1,11 @@
+﻿@page
+@using ContosoCrafts.WebSite.Components
+@model ContosoCrafts.WebSite.Pages.GalleryModel
+@{
+    ViewData["Title"] = "Gallery";
+}
+<!--Displaying the title of this page -->
+<h1>@ViewData["Title"]</h1>
+
+@(await Html.RenderComponentAsync<PlantList>(RenderMode.ServerPrerendered))
+<script src="_framework/blazor.server.js"></script>
