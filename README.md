@@ -1,4 +1,4 @@
-# ASP.NET Website 
+# An Agile project built on the base ASP.NET Core Website 
 
 ## Tutorial
 
