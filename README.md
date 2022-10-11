@@ -1,6 +1,6 @@
-# An Agile project built on the base ASP.NET Core Website 
+# Homegrown Horizons Website
 
-## Tutorial
+# An Agile project built on the base ASP.NET Core Website 
 
 - [ASP.NET Tutorial](https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro)
 
