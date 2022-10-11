@@ -1,5 +1,14 @@
 # Homegrown Horizons Website
-- An Agile Project built on the base ASP.NET Core Website 
+- An prototype Agile Project built on the base ASP.NET Core Website.
+This project will use this base tutorial’s layout, such as utilizing the square 
+images that users can click on for more information. However, this project's pictures and 
+descriptions will be of indoor houseplants and not crafts. 
+
+To differ our project from the base tutorial we will add basic CRUDi (Create, Read, Update, Delete) functionality through 
+additional features. Users are able to view a gallery of indoor plants and filter results, create their own posts to upload to the community gallery, update posts, and delete posts. 
+
+Homegrown Horizon’s main objective is to provide a platform for aspiring house plant owners to begin their 
+indoor plant journey.
 
 # Tutorial
 
