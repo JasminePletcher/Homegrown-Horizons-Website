@@ -13,7 +13,7 @@ namespace ContosoCrafts.WebSite.Controllers
     ///</summary> 
     public class PlantController : ControllerBase
     {
-        // Delcaring a variable for the JsonFilePlantService
+        // Declaring a variable for the JsonFilePlantService
         public JsonFilePlantService PlantService { get; }
 
         // Delcaring the userType variable 

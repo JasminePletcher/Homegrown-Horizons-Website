@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 namespace ContosoCrafts.WebSite.Models
 {
     /// <summary>
-    /// stores the Plant types details
+    /// Stores the Plant types details
     /// </summary>
     public class PlantTypeModel
     {
@@ -14,11 +14,11 @@ namespace ContosoCrafts.WebSite.Models
         [JsonPropertyName("ID")]
         public int ID { get; set; }
 
-        //tab number on the page
+        // Tab number on the page
         [JsonPropertyName("TabNum")]
         public TabNum TabNum { get; set; }
 
-        // type of plant
+        // Type of plant
         [JsonPropertyName("Type")]
         public string Type { get; set; }
 
@@ -26,19 +26,19 @@ namespace ContosoCrafts.WebSite.Models
         [JsonPropertyName("Description")]
         public string Description { get; set; }
 
-        //the plant example
+        // The plant example
         [JsonPropertyName("Plant")]
         public string Plant { get; set; }
 
-        //the image of the post
+        // The image of the post
         [JsonPropertyName("Image")]
         public string Image { get; set; }
 
-        //the website source
+        // The website source
         [JsonPropertyName("Source")]
         public string Source { get; set; }
 
-        //Want string representation of a the gallery product 
+        // String representation of a the gallery product 
         public override string ToString() => JsonSerializer.Serialize<PlantTypeModel>(this);
 
     }

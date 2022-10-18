@@ -16,7 +16,7 @@ namespace ContosoCrafts.WebSite.Controllers
         // Creating a JsonFilePlantService variable 
         public JsonFilePlantService CommunityBoardGalleryService { get; }
 
-        // Delcaring the UserType
+        // Declaring the UserType
         private UserType userType = UserType.USER;
 
         /// <summary>
@@ -31,7 +31,6 @@ namespace ContosoCrafts.WebSite.Controllers
         }
 
         [HttpGet]
-
         /// <summary>
         ///  This function will return the GetGallery function from the
         /// </summary>

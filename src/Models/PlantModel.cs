@@ -22,7 +22,7 @@ namespace ContosoCrafts.WebSite.Models
         [JsonPropertyName("Title")]
         public string Title { get; set; }
 
-        //Mapping out the image.
+        // Mapping out the image.
         [JsonPropertyName("Image")]
         public string Image { get; set; }
 
@@ -38,7 +38,7 @@ namespace ContosoCrafts.WebSite.Models
         [JsonPropertyName("WikiLink")]
         public string Wikilink { get; set; }
 
-        // Want json representation of a the gallery product 
+        // String of a gallery product 
         public override string ToString() => JsonSerializer.Serialize<PlantModel>(this);
   
     }
